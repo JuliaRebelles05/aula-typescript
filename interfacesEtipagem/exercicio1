@@ -1,0 +1,15 @@
+interface Carro {
+    marca: string;
+    modelo: string;
+    ano: number;
+    motor: string;
+}
+
+const meuCarro: Carro = {
+    marca: "Volkwagen",
+    modelo: "Jetta",
+    ano: 2018,
+    motor: "2.0 Flex"
+};
+
+console.log("Meu carro: ", meuCarro);

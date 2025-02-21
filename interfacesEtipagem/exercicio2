@@ -1,0 +1,11 @@
+interface Multiplicacao {
+    (a: number, b: number): number;
+
+}
+
+const multiplicar: Multiplicacao = (a, b) => a * b;
+
+
+console.log ("Multiplicação 3x3 = ", multiplicar(3, 3));
+console.log ("Multiplicação 5x3 = ", multiplicar(5, 3));
+console.log ("Multiplicação 2x8 = ", multiplicar(2, 8));
