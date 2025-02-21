@@ -1,0 +1,24 @@
+interface Repositorio<T> {
+   salvar(dado: T): void;
+   obterTodos(): T[];
+}
+
+type Usuario = {
+   nome: string;
+   email: string;
+};
+
+class RepositorioUsuario implements Repositorio<Usuario> {
+   private usuarios: Usuario[] = [];
+   salvar(dado: Usuario): void {
+       this.usuarios.push(dado);
+   }
+   obterTodos(): Usuario[] {
+       return this.usuarios;
+   }
+}
+
+const repo = new RepositorioUsuario();
+repo.salvar({ nome: "Ana", email: "ana@email.com" });
+repo.salvar({ nome: "Carlos", email: "carlos@email.com" });
+console.log("Usuários armazenados:", repo.obterTodos());

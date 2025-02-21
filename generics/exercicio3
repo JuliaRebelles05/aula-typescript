@@ -1,0 +1,10 @@
+
+function inverterArray<T>(array: T[]): T[] {
+    return array.slice().reverse(); // Criamos uma cópia para evitar modificar o original
+ }
+
+ const numeros = [1, 2, 3, 4, 5];
+ console.log("Array invertido (números):", inverterArray(numeros));
+
+ const palavras = ["a", "b", "c", "d"];
+ console.log("Array invertido (strings):", inverterArray(palavras));
